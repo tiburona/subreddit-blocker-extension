@@ -9,7 +9,6 @@
 
     chrome.storage.onChanged.addListener((changes, area) => {
         if (area === "sync" && changes.blockedSubreddits) {
-            console.log("🔄 blockedSubreddits changed:", changes.blockedSubreddits.newValue);
             blocked = (changes.blockedSubreddits.newValue as string[]).map(s => s.toLowerCase());
         }
     })
