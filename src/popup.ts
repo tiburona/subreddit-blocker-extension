@@ -1,4 +1,3 @@
-console.log("loaded")
 
 document.addEventListener("DOMContentLoaded", () => {
     const input = document.getElementById("subreddit") as HTMLInputElement;

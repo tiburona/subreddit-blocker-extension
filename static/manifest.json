@@ -19,7 +19,13 @@
                 "https://www.reddit.com/*",
                 "https://old.reddit.com/*"
             ],
-            "js": ["content.js"]
+            "js": ["reddit.js"]
+        },
+        {
+            "matches": [
+                "https://mail.google.com/*"
+            ],
+            "js": ["gmail.js"]
         }
     ],
     "background": {

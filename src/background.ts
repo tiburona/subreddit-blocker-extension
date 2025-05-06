@@ -1,6 +1,6 @@
 chrome.runtime.onInstalled.addListener(() => {
     chrome.storage.sync.set({
-        blockedSubreddits: ["AITAH", "Spanish"]}, () => {
+        blockedSubreddits: ["aitah"]}, () => {
             console.log("Initial blocked subreddits set.")
         }
     )
