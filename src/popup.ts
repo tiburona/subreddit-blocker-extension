@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       li.textContent = subreddit;
 
       const removeBtn = document.createElement('button');
-      removeBtn.textContent = '❌';
+      removeBtn.innerText = 'x';
       removeBtn.addEventListener('click', () => {
         const updated = subreddits.filter((s) => s != subreddit);
         chrome.storage.sync.set({ blockedSubreddits: updated }, () => {
