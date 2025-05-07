@@ -24,15 +24,28 @@ npm run build      # outputs to ./dist
 ``npm run watch```      # incremental rebuilds
 
 ## Structure
-
-├── src/           # TypeScript sources
-│   ├── reddit.ts
+```
+.
+├── README.md
+├── eslint.config.js
+├── jest.config.mjs
+├── package-lock.json
+├── package.json
+├── src
+│   ├── __tests__
+│   ├── background.ts
 │   ├── gmail.ts
 │   ├── popup.ts
-│   └── background.ts
-├── static/        # manifest, icons, raw popup.html
-├── dist/          # build output (ignored in Git)
+│   ├── reddit.ts
+│   └── utils.ts
+├── static
+│   ├── icons
+│   ├── manifest.json
+│   └── popup.html
+├── tsconfig.json
+├── tsconfig.test.json
 └── webpack.config.js
+```
 
 ## Usage
 	1.	Click the extension icon.
