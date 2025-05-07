@@ -3,7 +3,7 @@ const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    'mode': 'production',
+    mode: process.env.NODE_ENV || 'production',
     entry: {
         reddit: './src/reddit.ts',
         background: './src/background.ts',
@@ -18,7 +18,13 @@ module.exports = {
         extensions: ['.ts', '.js'],
     },
     module: {
-        rules: [{ test: /\.ts$/, use: 'ts-loader'}]
+        rules: [
+            {
+              test: /\.ts$/,
+              exclude: /__tests__/,
+              use: 'ts-loader'
+            }
+          ]
     },
     plugins: [
         new CopyPlugin({
