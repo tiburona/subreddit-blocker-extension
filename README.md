@@ -1,6 +1,6 @@
 # Subreddit Blocker
 
-Hide subreddits you never want to see—on Reddit **and** in Gmail digests.
+Hide subreddits you never want to see both on Reddit **and** in Gmail digests.  Note: This extension currently targets Reddit’s modern layout (www.reddit.com). Compatibility with old.reddit.com is not guaranteed.
 
 ## Features
 - Blocks posts on both new and old Reddit.
